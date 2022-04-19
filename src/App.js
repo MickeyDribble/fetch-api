@@ -9,7 +9,7 @@ function App() {
 		const fetchBeers = async () => {
 			try {
 				const response = await fetch(
-					'https://api.punkapi.com/v2/beers',
+					'https://api.punkapi.com/v2/beers?beer_name=lager&per_page=20',
 				);
 				if (!response.ok) {
 					throw new Error(response.statusText);
